@@ -4,90 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precision Works Detailing</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here */
+        .hero {
+            background-image: url('car.jpg');
+            height: 70vh;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .service-card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .pricing-table {
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <h1>Precision Works Detailing</h1>
-            <p>Detailing your vehicle to perfection.</p>
-            <a href="#services" class="cta">Our Services</a>
-        </div>
-    </header>
-
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Full Exterior Wash</li>
-                <li>Interior Detailing</li>
-                <li>Paint Protection</li>
-                <li>Headlight Restoration</li>
-            </ul>
-        </div>
+    <section class="hero">
+        <h1>Precision Works Detailing</h1>
+        <p>Your car deserves the best!</p>
     </section>
 
-    <section id="pricing">
-        <div class="container">
-            <h2>Pricing</h2>
-            <table>
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="row">
+            <div class="col-md-3 service-card" data-aos="fade-up">
+                <h3>Service 1</h3>
+                <p>Description of service 1.</p>
+            </div>
+            <div class="col-md-3 service-card" data-aos="fade-up">
+                <h3>Service 2</h3>
+                <p>Description of service 2.</p>
+            </div>
+            <div class="col-md-3 service-card" data-aos="fade-up">
+                <h3>Service 3</h3>
+                <p>Description of service 3.</p>
+            </div>
+            <div class="col-md-3 service-card" data-aos="fade-up">
+                <h3>Service 4</h3>
+                <p>Description of service 4.</p>
+            </div>
+        </div>
+
+        <h2>Pricing</h2>
+        <table class="table pricing-table">
+            <thead>
                 <tr>
                     <th>Service</th>
                     <th>Price</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <td>Full Exterior Wash</td>
-                    <td>$30</td>
+                    <td>Basic Wash</td>
+                    <td>$90</td>
                 </tr>
                 <tr>
-                    <td>Interior Detailing</td>
-                    <td>$50</td>
+                    <td>Full Detail</td>
+                    <td>$180</td>
                 </tr>
-                <tr>
-                    <td>Paint Protection</td>
-                    <td>$100</td>
-                </tr>
-                <tr>
-                    <td>Headlight Restoration</td>
-                    <td>$25</td>
-                </tr>
-            </table>
-        </div>
-    </section>
+            </tbody>
+        </table>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At Precision Works Detailing, we strive to provide the best detailing services in town. Our team of professionals uses high-quality products to ensure your vehicle looks its best.</p>
-        </div>
-    </section>
+        <h2>About Us</h2>
+        <p>Located in Goshen and Elkhart area, our mission is to provide top-notch car detailing services.</p>
 
-    <section id="why-choose-us">
-        <div class="container">
-            <h2>Why Choose Us?</h2>
-            <p>We are dedicated to quality and customer satisfaction. Our experienced team will treat your vehicle with the utmost care and attention to detail.</p>
-        </div>
-    </section>
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li data-aos="zoom-in">Experienced Team</li>
+            <li data-aos="zoom-in">Quality Products</li>
+            <li data-aos="zoom-in">Satisfaction Guaranteed</li>
+            <li data-aos="zoom-in">Convenient Location</li>
+            <li data-aos="zoom-in">Affordable Rates</li>
+            <li data-aos="zoom-in">Customer-Centric Service</li>
+        </ul>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+                <textarea class="form-control" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Precision Works Detailing. All rights reserved.</p>
-        </div>
+    <footer class="text-center">
+        <p>Contact us: 574-606-3604 | precisionworksdetails@gmail.com</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
