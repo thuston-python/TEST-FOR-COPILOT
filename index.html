@@ -7,41 +7,87 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Precision Works Detailing</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <div class="container">
+            <h1>Precision Works Detailing</h1>
+            <p>Detailing your vehicle to perfection.</p>
+            <a href="#services" class="cta">Our Services</a>
+        </div>
     </header>
-    <main>
-        <section id="services">
+
+    <section id="services">
+        <div class="container">
             <h2>Our Services</h2>
-            <p>At Precision Works Detailing, we provide top-notch car detailing services designed to keep your vehicle looking pristine. Our services include:</p>
             <ul>
-                <li>Exterior Washing and Waxing</li>
-                <li>Interior Cleaning and Shampooing</li>
-                <li>Paint Correction</li>
+                <li>Full Exterior Wash</li>
+                <li>Interior Detailing</li>
+                <li>Paint Protection</li>
                 <li>Headlight Restoration</li>
-                <li>Ceramic Coating</li>
             </ul>
-        </section>
-        <section id="about">
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Full Exterior Wash</td>
+                    <td>$30</td>
+                </tr>
+                <tr>
+                    <td>Interior Detailing</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Paint Protection</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Headlight Restoration</td>
+                    <td>$25</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
             <h2>About Us</h2>
-            <p>We are a team of passionate detailing experts dedicated to providing exceptional service and quality. With years of experience in the industry, we understand how to care for your vehicle as if it were our own.</p>
-        </section>
-        <section id="contact">
+            <p>At Precision Works Detailing, we strive to provide the best detailing services in town. Our team of professionals uses high-quality products to ensure your vehicle looks its best.</p>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <p>We are dedicated to quality and customer satisfaction. Our experienced team will treat your vehicle with the utmost care and attention to detail.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
             <h2>Contact Us</h2>
-            <p>If you have any questions or would like to book an appointment, feel free to reach out to us!</p>
-            <p>Email: <a href="mailto:info@precisionworksdetail.com">info@precisionworksdetail.com</a></p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </main>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2026 Precision Works Detailing. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2026 Precision Works Detailing. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
